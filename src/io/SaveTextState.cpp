@@ -145,7 +145,7 @@ void TextState::saveStairs(Dungeon &d, std::ofstream &file){
 
 
     file << "DOWNSTAIRS" << std::endl;
-    for (auto stair : d.up_stairs){
+    for (auto stair : d.down_stairs){
         file << "BEGIN STAIR" << std::endl;
         file << "location " << stair.getX() << " " << stair.getY() << std::endl;
         file << "END STAIR" << std::endl;

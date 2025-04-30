@@ -59,11 +59,11 @@ int main(int argc, char *argv[])
     while (status != 1){
         // ui::destroy_ncurses();
         // ui::init_ncurses();
-        if (status == -2){
+        if (status == -2 || status == -3){
             d.resetDungeon();
             status = d.startGameplay(num_monsters);
         }
-        if (status == -3){
+        if (status == -4){
             d.resetDungeon(true);
             TextState::loadState(d);
             status = d.startGameplay(d.numMonsterAlive, true);

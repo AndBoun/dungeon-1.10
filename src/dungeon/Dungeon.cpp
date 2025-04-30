@@ -45,6 +45,7 @@ void Dungeon::resetDungeon(bool fullReset)
         } else if (fullReset && items[i] != nullptr){
             delete items[i];  
             items[i] = nullptr;
+            items.erase(items.begin() + i);
         }
     }
 
@@ -63,7 +64,7 @@ void Dungeon::resetDungeon(bool fullReset)
         items.clear();
         pc.items.clear(); // Clear the player's items
     }
-    generateRandomDungeon(); // Regenerate the dungeon
+    if (!fullReset) generateRandomDungeon(); // Regenerate the dungeon
 }
 
 void Dungeon::generateRandomDungeon()
@@ -137,13 +138,9 @@ int Dungeon::startGameplay(int numNPCS, bool loadState){
                 ui::render_grid((*this), getGrid());
             }
             int status = ui::get_input(*this);
-            if (status == -2){
+            if (status != 1){
                 pq_destroy(pq);
-                return -2;
-            }
-            if (status == -3){
-                pq_destroy(pq);
-                return -3;
+                return status;
             }
 
             next_time = current_time + calculateTiming(pc.getSpeed());

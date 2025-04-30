@@ -238,8 +238,8 @@ int ui::get_input(Dungeon &d) {
                 break;
             
             case ']': // Load State
-                result = 0; // no movement, run loop again
-                return -3;
+                render_top_bar(COLOR_SUCCESS_ID, "State Loaded");
+                return -4;
                 
             default:
                 render_top_bar(COLOR_ERROR_ID, "Invalid Input");

@@ -71,37 +71,38 @@ void TextState::loadRooms(Dungeon &d, std::ifstream &file){
 void TextState::loadStairs(Dungeon &d, std::ifstream &file){
     std::string line;
     // UPSTAIRS
-    std::getline(file, line);
-    if (line == "UPSTAIRS") {
-        while (std::getline(file, line)) {
-            if (line == "END") break;
-            if (line == "BEGIN STAIR") {
-                int x = 0, y = 0;
-                std::getline(file, line); // location line
-                std::stringstream ss(line);
-                std::string temp;
-                ss >> temp >> x >> y;
-                Stair stair(x, y, '<');
-                d.up_stairs.push_back(stair);
-                std::getline(file, line); // END STAIR
-            }
+    while (std::getline(file, line)) {
+        if (line == "UPSTAIRS") break;
+    }
+    while (std::getline(file, line)) {
+        if (line == "END") break;
+        if (line == "BEGIN STAIR") {
+            int x = 0, y = 0;
+            std::getline(file, line); // location line
+            std::stringstream ss(line);
+            std::string temp;
+            ss >> temp >> x >> y;
+            Stair stair(x, y, '<');
+            d.up_stairs.push_back(stair);
+            std::getline(file, line); // END STAIR
         }
     }
+    
     // DOWNSTAIRS
-    std::getline(file, line);
-    if (line == "DOWNSTAIRS") {
-        while (std::getline(file, line)) {
-            if (line == "END") break;
-            if (line == "BEGIN STAIR") {
-                int x = 0, y = 0;
-                std::getline(file, line); // location line
-                std::stringstream ss(line);
-                std::string temp;
-                ss >> temp >> x >> y;
-                Stair stair(x, y, '>');
-                d.down_stairs.push_back(stair);
-                std::getline(file, line); // END STAIR
-            }
+    while (std::getline(file, line)) {
+        if (line == "DOWNSTAIRS") break;
+    }
+    while (std::getline(file, line)) {
+        if (line == "END") break;
+        if (line == "BEGIN STAIR") {
+            int x = 0, y = 0;
+            std::getline(file, line); // location line
+            std::stringstream ss(line);
+            std::string temp;
+            ss >> temp >> x >> y;
+            Stair stair(x, y, '>');
+            d.down_stairs.push_back(stair);
+            std::getline(file, line); // END STAIR
         }
     }
 }
@@ -438,6 +439,8 @@ void TextState::loadPC(Dungeon &d, std::ifstream &file){
         }
     }
 
+    d.pc = pc; // Set the PC in the dungeon
+
     // END
     while (std::getline(file, line)) {
         if (line == "END") break;
@@ -489,8 +492,12 @@ void TextState::loadGrid(Dungeon &d, std::ifstream &file){
             } else if (token == "#") {
                 cellType = '#';
                 ss >> hardness;
+            } else if (token == "<" || token == ">") {
+                cellType = token[0];
+            } else {
+                continue;
             }
-            d.grid[y][x] = Cell(cellType, hardness);
+            d.grid[y][x] = Cell(hardness, cellType);
             x++;
         }
         y++;
@@ -521,7 +528,7 @@ void TextState::loadFog(Dungeon &d, std::ifstream &file){
             } else if (token == "<" || token == ">") {
                 cellType = token[0];
             }
-            d.fog[y][x] = Cell(cellType, 0); // Hardness is always 0 for fog
+            d.fog[y][x] = Cell(0, cellType); // Hardness is always 0 for fog
             x++;
         }
         y++;

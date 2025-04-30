@@ -203,7 +203,11 @@ void ui::take_off_item(Dungeon &d){
     Item *item = get_item_from_equipment(d);
     if (item == nullptr){ return; }
 
-    d.pc.items.push_back(item);
+    if (d.pc.items.size() < 10){
+        d.pc.items.push_back(item);
+    } else {
+        drop_item(d);
+    }
 
     if (item->type == WEAPON) {
         d.getPC().weapon_slot = nullptr;

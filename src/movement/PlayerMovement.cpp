@@ -22,11 +22,11 @@ int Dungeon:: movePC(int x, int y, bool teleport){
     // Check if the move is invalid (same position, rock, or non-zero hardness)
     if (
         !teleport && (
+            (x < 0 || x >= DUNGEON_WIDTH - 1)  || 
+            (y < 0 || y >= DUNGEON_HEIGHT - 1) ||
             (x == pcX && y == pcY) || 
             (getGrid()[y][x].getType() == ROCK)   || 
-            (getGrid()[y][x].getHardness() > 0)   ||
-            (x < 0 || x >= DUNGEON_WIDTH - 1)  || 
-            (y < 0 || y >= DUNGEON_HEIGHT - 1)
+            (getGrid()[y][x].getHardness() > 0)
         )
     ) {
         // printf("Player made an invalid move to (%d, %d)\n", x, y);
