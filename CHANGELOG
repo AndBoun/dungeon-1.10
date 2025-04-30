@@ -1,0 +1,29 @@
+commit 48dc1f5762ecc54cacca40977926bec3c392b0f4
+Author: AndBoun <167598896+AndBoun@users.noreply.github.com>
+Date:   Wed Apr 30 04:44:39 2025 +0000
+
+    fix item saving
+
+commit ef9ac38fc6f161ed4f1583f6ec3fe558a783a6c6
+Author: AndBoun <167598896+AndBoun@users.noreply.github.com>
+Date:   Wed Apr 30 04:30:58 2025 +0000
+
+    Add bugged loading. Make taking off an item when inventory full result in dropping item.
+
+commit f3e38cd5ecc07fe606d598ab02ead25f29802458
+Author: AndBoun <167598896+AndBoun@users.noreply.github.com>
+Date:   Wed Apr 30 03:12:36 2025 +0000
+
+    Add new state.txt and saving. Broken impementation of loading with text
+
+commit 6bff72fb45402529244e1d53d1d58dddbc676023
+Author: AndBoun <167598896+AndBoun@users.noreply.github.com>
+Date:   Tue Apr 29 18:31:44 2025 -0500
+
+    Add 1.09
+
+commit 558cbcb85dbde216d9f418af8da03a73555f5b80
+Author: Andrew Boun <167598896+AndBoun@users.noreply.github.com>
+Date:   Mon Apr 28 01:56:14 2025 -0500
+
+    Initial commit
