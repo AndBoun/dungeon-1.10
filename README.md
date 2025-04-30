@@ -5,12 +5,21 @@
 mkdir ~/.rlg327
 ```
 
+> [!NOTE]
+> You must have these files in your `.rlg327` folder. All files within the `.rlg327` folder are from Iowa State University's professor, Jeremy Scheaffer, except the `state.txt` file thats created by me. The included `.rlg327` provides all you need, including `state.txt` to run the program
+
+
 Build the project:
 ```bash
 make
 ```
 
+
+> [!Note]
+> The project includes a `.devcontainer` folder, that provides the intended development environment for the program. It uses a `Dockerfile` with the latest stable Fedora version with gcc/g++, gdb, and ncurses. This emulates Iowa State University's Pyrite server environment.
+
 ## Running configurations
+
 Run the project:
 ```bash
 ./dungeon --load --save --nummon <number>
@@ -41,10 +50,12 @@ Run the project:
 - Press `]` to revert back to your saved state. This assumes you have a valid state saved in `state.txt`.
 
 ## How the Project Runs:
-In `main.cpp`, it creates a dungeon instance, `start_gameplay()` in `Dungeon.cpp`.  This will then ask for user input in `ui.cpp`, this is where you can save and load state in `LoadTextState.cpp` and `SaveTextState.cpp`. When you press `]` to load a state, it return `-4` all the way back into `start_gampeplay()` and `main.cpp`, where is will reset the dungeon and load the `state.txt` with `LoadTextState.cpp`
+In `main.cpp`, it creates a dungeon instance, `start_gameplay()` in `Dungeon.cpp`.  This will then ask for user input in `ui.cpp`, this is where you can save and load a state in `LoadTextState.cpp` and `SaveTextState.cpp`. When you press `]` to load a state, it returns `-4` all the way back into `start_gampeplay()` and `main.cpp`, where is will reset the dungeon and load the `state.txt` with `LoadTextState.cpp`
 
 
 # `State.txt` Configurations
+See the included `state.txt` file in the `.rlg327` folder for a full representation.
+
 ### Rooms
 `topLeft`is a `Point(x, y)`
 ```
