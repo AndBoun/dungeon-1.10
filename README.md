@@ -40,12 +40,14 @@ Run the project:
 ```
 
 # About the Project:
+The project introduces saving and loading with text files. This allows you to save a state while playing the game and instantly revert to it. You do this in gameplay, not with flags before running the program (like in previous assignments, although these still work).
 
 ## Constraints:
 - All files and inputs are assumed to be valid
 
 ## Additional Notes
 - Loading and Saving depend you maintaining the same `object_desc.txt` and  `monster_desc.txt` files in the `rlg327` folder.
+- The loading and saving should maintain everything, but the priority queue state.
 - Press `[` to save the current state in your turn.
 - Press `]` to revert back to your saved state. This assumes you have a valid state saved in `state.txt`.
 
