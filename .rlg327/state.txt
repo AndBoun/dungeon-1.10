@@ -1,107 +1,98 @@
 ROOMS
 BEGIN ROOM
-width 21
-height 3
-topLeft 12 11
+width 22
+height 8
+topLeft 54 10
+END ROOM
+BEGIN ROOM
+width 59
+height 5
+topLeft 7 2
 END ROOM
 BEGIN ROOM
 width 4
 height 3
-topLeft 69 6
+topLeft 70 1
 END ROOM
 BEGIN ROOM
-width 13
+width 4
+height 4
+topLeft 44 12
+END ROOM
+BEGIN ROOM
+width 19
 height 3
-topLeft 9 6
+topLeft 8 10
 END ROOM
 BEGIN ROOM
 width 14
-height 3
-topLeft 17 17
-END ROOM
-BEGIN ROOM
-width 13
-height 3
-topLeft 57 16
-END ROOM
-BEGIN ROOM
-width 12
-height 3
-topLeft 46 9
-END ROOM
-BEGIN ROOM
-width 6
-height 4
-topLeft 60 2
-END ROOM
-BEGIN ROOM
-width 4
-height 3
-topLeft 30 1
-END ROOM
-BEGIN ROOM
-width 13
-height 6
-topLeft 44 2
-END ROOM
-BEGIN ROOM
-width 12
-height 3
-topLeft 42 16
-END ROOM
-BEGIN ROOM
-width 4
-height 3
-topLeft 71 15
-END ROOM
-BEGIN ROOM
-width 4
-height 4
-topLeft 75 7
-END ROOM
-BEGIN ROOM
-width 7
-height 3
-topLeft 3 13
-END ROOM
-BEGIN ROOM
-width 5
-height 4
-topLeft 34 7
-END ROOM
-BEGIN ROOM
-width 4
-height 3
-topLeft 4 8
-END ROOM
-BEGIN ROOM
-width 4
-height 3
-topLeft 39 2
+height 9
+topLeft 29 9
 END ROOM
 END
 
 UPSTAIRS
 BEGIN STAIR
-location 62 4
+location 74 11
 END STAIR
 BEGIN STAIR
-location 48 10
+location 62 16
 END STAIR
 BEGIN STAIR
-location 62 3
+location 41 14
 END STAIR
 END
 
 DOWNSTAIRS
 BEGIN STAIR
-location 42 18
+location 60 3
+END STAIR
+BEGIN STAIR
+location 16 2
+END STAIR
+BEGIN STAIR
+location 9 10
+END STAIR
+BEGIN STAIR
+location 35 4
 END STAIR
 END
 
 ITEMS
 BEGIN ITEM
-pos -1 -1
+pos 66 12
+hit 0
+dodge 10
+def 0
+weight 1
+speed 0
+attr 0
+val 13
+rrty 90
+symbol |
+ID 0
+descID 0
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 11 12
+hit 0
+dodge 10
+def 0
+weight 1
+speed 0
+attr 0
+val 14
+rrty 90
+symbol |
+ID 1
+descID 0
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 62 14
 hit 10
 dodge 0
 def 10
@@ -111,269 +102,13 @@ attr 0
 val 20000000
 rrty 80
 symbol "
-ID 0
-descID 17
-inInventory 1
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 43 16
-hit 0
-dodge 0
-def 0
-weight 3
-speed 0
-attr 1
-val 3
-rrty 100
-symbol _
-ID 0
-descID 8
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos -1 -1
-hit 0
-dodge 10
-def 0
-weight 1
-speed 0
-attr 0
-val 11
-rrty 90
-symbol |
-ID 1
-descID 0
-inInventory 1
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos -1 -1
-hit 0
-dodge 0
-def 16
-weight 8
-speed 0
-attr 0
-val 64
-rrty 100
-symbol ]
 ID 2
-descID 4
-inInventory 1
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos -1 -1
-hit 0
-dodge 0
-def 0
-weight 1
-speed 5
-attr 0
-val 1000
-rrty 80
-symbol =
-ID 3
-descID 12
-inInventory 1
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos -1 -1
-hit 0
-dodge 0
-def 12
-weight 8
-speed 0
-attr 0
-val 63
-rrty 100
-symbol ]
-ID 4
-descID 4
-inInventory 1
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos -1 -1
-hit 4
-dodge 0
-def 0
-weight 4
-speed -5
-attr 0
-val 449
-rrty 70
-symbol [
-ID 5
-descID 2
-inInventory 1
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 52 6
-hit 0
-dodge 34
-def 31
-weight 3
-speed 10
-attr 0
-val 17000
-rrty 30
-symbol )
-ID 6
-descID 5
+descID 17
 inInventory 0
 canBeGenerated 1
 END ITEM
 BEGIN ITEM
-pos 53 16
-hit 0
-dodge 0
-def 0
-weight 3
-speed -5
-attr 0
-val 449
-rrty 80
-symbol \
-ID 7
-descID 3
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 60 2
-hit 0
-dodge 10
-def 100
-weight 2
-speed 0
-attr 200
-val 199
-rrty 35
-symbol ]
-ID 8
-descID 10
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 67 16
-hit 0
-dodge 0
-def 0
-weight 1
-speed 38
-attr 0
-val 1000
-rrty 80
-symbol =
-ID 9
-descID 12
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 44 16
-hit 2
-dodge 0
-def 0
-weight 3
-speed -5
-attr 0
-val 449
-rrty 70
-symbol [
-ID 10
-descID 2
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 53 5
-hit 0
-dodge 0
-def 14
-weight 8
-speed 0
-attr 0
-val 64
-rrty 100
-symbol ]
-ID 11
-descID 4
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos -1 -1
-hit 0
-dodge 0
-def 0
-weight 1
-speed 0
-attr 0
-val 1000
-rrty 80
-symbol =
-ID 12
-descID 13
-inInventory 1
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 63 18
-hit 0
-dodge 0
-def 14
-weight 8
-speed 0
-attr 0
-val 60
-rrty 100
-symbol ]
-ID 13
-descID 4
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 41 2
-hit 0
-dodge 0
-def 16
-weight 8
-speed 0
-attr 0
-val 60
-rrty 100
-symbol ]
-ID 14
-descID 4
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos 75 9
-hit 0
-dodge 10
-def 0
-weight 1
-speed 0
-attr 0
-val 12
-rrty 90
-symbol |
-ID 15
-descID 0
-inInventory 0
-canBeGenerated 1
-END ITEM
-BEGIN ITEM
-pos -1 -1
+pos 15 4
 hit 10
 dodge 0
 def 10
@@ -383,13 +118,77 @@ attr 0
 val 3
 rrty 80
 symbol {
-ID 16
+ID 3
 descID 16
-inInventory 1
+inInventory 0
 canBeGenerated 1
 END ITEM
 BEGIN ITEM
-pos 49 10
+pos 22 12
+hit 3
+dodge 0
+def 0
+weight 2
+speed -5
+attr 0
+val 449
+rrty 70
+symbol [
+ID 4
+descID 2
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 26 12
+hit 10
+dodge 0
+def 10
+weight 10
+speed 5
+attr 10
+val 300
+rrty 80
+symbol |
+ID 5
+descID 15
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 69 17
+hit 0
+dodge 10
+def 100
+weight 2
+speed 0
+attr 200
+val 199
+rrty 25
+symbol )
+ID 6
+descID 11
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 46 6
+hit 0
+dodge 0
+def 0
+weight 1
+speed 11
+attr 0
+val 1000
+rrty 80
+symbol =
+ID 7
+descID 12
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos -1 -1
 hit 0
 dodge 0
 def 0
@@ -399,8 +198,136 @@ attr 0
 val 1000
 rrty 80
 symbol =
-ID 17
+ID 8
 descID 13
+inInventory 1
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 58 10
+hit 0
+dodge 0
+def 0
+weight 1
+speed 0
+attr 0
+val 1000
+rrty 80
+symbol =
+ID 9
+descID 13
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 39 10
+hit 10
+dodge 0
+def 10
+weight 2
+speed 0
+attr 0
+val 3
+rrty 80
+symbol {
+ID 10
+descID 16
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 70 16
+hit 0
+dodge 0
+def 0
+weight 1
+speed 0
+attr 0
+val 1000
+rrty 80
+symbol =
+ID 11
+descID 13
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 31 11
+hit 3
+dodge 0
+def 0
+weight 3
+speed -5
+attr 0
+val 449
+rrty 70
+symbol [
+ID 12
+descID 2
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos -1 -1
+hit 0
+dodge 0
+def 0
+weight 1
+speed 0
+attr 0
+val 1000
+rrty 80
+symbol =
+ID 13
+descID 13
+inInventory 1
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 34 15
+hit 0
+dodge 34
+def 0
+weight 1
+speed 0
+attr 0
+val 11989
+rrty 20
+symbol (
+ID 14
+descID 6
+inInventory 0
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos -1 -1
+hit 0
+dodge 0
+def 0
+weight 1
+speed 0
+attr 0
+val 1000
+rrty 80
+symbol =
+ID 15
+descID 13
+inInventory 1
+canBeGenerated 1
+END ITEM
+BEGIN ITEM
+pos 29 5
+hit 0
+dodge 0
+def 0
+weight 3
+speed 0
+attr 200
+val 199
+rrty 30
+symbol _
+ID 16
+descID 9
 inInventory 0
 canBeGenerated 1
 END ITEM
@@ -408,74 +335,74 @@ END
 
 NPCS
 BEGIN NPC
-hp 601
-position 40 2
-speed 8
-symbol M
-alive 1
-ID 0
-pcPosition 0 0
-descID 3
-canBeGenerated 1
-END NPC
-BEGIN NPC
-hp 100000
-position 40 9
-speed 30
-symbol z
-alive 1
-ID 1
-pcPosition 3 13
-descID 5
-canBeGenerated 1
-END NPC
-BEGIN NPC
-hp 29
-position 6 11
-speed 8
-symbol G
-alive 1
-ID 2
-pcPosition 12 13
-descID 12
-canBeGenerated 1
-END NPC
-BEGIN NPC
-hp 10
-position 28 17
-speed 5
-symbol P
-alive 1
-ID 3
-pcPosition -1 -1
-descID 17
-canBeGenerated 1
-END NPC
-BEGIN NPC
-hp 28
-position 48 11
-speed 11
-symbol G
-alive 1
-ID 4
-pcPosition 3 13
-descID 11
-canBeGenerated 1
-END NPC
-BEGIN NPC
-hp 689
-position 41 17
+hp 710
+position 56 14
 speed 2
 symbol C
 alive 1
-ID 5
-pcPosition 28 18
+ID 0
+pcPosition 0 0
 descID 8
 canBeGenerated 1
 END NPC
 BEGIN NPC
-hp 696
-position 36 2
+hp 20
+position 45 3
+speed 9
+symbol s
+alive 1
+ID 1
+pcPosition 0 0
+descID 4
+canBeGenerated 1
+END NPC
+BEGIN NPC
+hp 20
+position 23 4
+speed 10
+symbol s
+alive 1
+ID 2
+pcPosition 0 0
+descID 4
+canBeGenerated 1
+END NPC
+BEGIN NPC
+hp 20
+position 46 14
+speed 10
+symbol s
+alive 1
+ID 3
+pcPosition 0 0
+descID 4
+canBeGenerated 1
+END NPC
+BEGIN NPC
+hp 20
+position 57 12
+speed 8
+symbol p
+alive 1
+ID 4
+pcPosition 0 0
+descID 0
+canBeGenerated 1
+END NPC
+BEGIN NPC
+hp 100
+position 38 13
+speed 10
+symbol p
+alive 1
+ID 5
+pcPosition 0 0
+descID 10
+canBeGenerated 1
+END NPC
+BEGIN NPC
+hp 1094
+position 44 5
 speed 8
 symbol M
 alive 1
@@ -485,63 +412,63 @@ descID 3
 canBeGenerated 1
 END NPC
 BEGIN NPC
-hp 10
-position 51 6
-speed 5
-symbol P
+hp 13
+position 17 12
+speed 50
+symbol p
 alive 1
 ID 7
-pcPosition -1 -1
-descID 17
+pcPosition 0 0
+descID 9
 canBeGenerated 1
 END NPC
 BEGIN NPC
-hp 100
-position 45 5
-speed 20
-symbol B
+hp 21
+position 30 17
+speed 12
+symbol G
 alive 1
 ID 8
-pcPosition 3 13
-descID 2
+pcPosition 0 0
+descID 11
 canBeGenerated 1
 END NPC
 BEGIN NPC
-hp 100000
-position 55 5
-speed 30
-symbol z
+hp 20
+position 42 6
+speed 9
+symbol s
 alive 1
 ID 9
-pcPosition 3 13
-descID 5
+pcPosition 0 0
+descID 4
 canBeGenerated 1
 END NPC
 END
 
 PC
-hp 99
-position 3 13
-speed 20
+hp 100
+position 29 2
+speed 10
 symbol @
 alive 1
 ID 0
 dice_dam 2 3 4
-weapon_slot 1
+weapon_slot -1
 offhand_slot -1
 range_slot -1
-armor_slot 5
-helmet_slot 4
+armor_slot -1
+helmet_slot -1
 cloak_slot -1
-gloves_slot 16
+gloves_slot -1
 boots_slot -1
-amulet_slot 0
+amulet_slot -1
 light_slot -1
-ring_slot_1 12
-ring_slot_2 3
-damDices 0 0 1 0 2 3 0 0 1 0 0 1 20 10 2 25 10 50 0 0 1 
-items
-2 END
+ring_slot_1 13
+ring_slot_2 8
+damDices 25 10 50 25 10 50 
+items 15 
+END
 
 NUMMONSTERS
 10
@@ -549,48 +476,48 @@ END
 
 GRID
 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 
-X 255 X 91 X 217 X 12 X 175 X 153 X 192 X 39 X 31 X 91 X 123 X 102 X 191 X 10 X 149 X 94 X 225 X 34 X 168 X 240 X 19 X 217 X 81 X 40 X 66 X 227 X 108 X 139 X 97 X 130 . 0 . 0 . 0 . 0 X 138 X 133 X 158 X 67 X 171 X 180 X 157 X 40 X 27 X 85 X 41 X 176 X 178 X 4 X 201 X 83 X 243 X 219 X 38 X 61 X 250 X 103 X 33 X 103 X 233 X 121 X 233 X 30 X 247 X 191 X 42 X 130 X 69 X 199 X 188 X 240 X 125 X 90 X 17 X 143 X 167 X 57 X 56 X 82 X 52 X 255 
-X 255 X 2 X 165 X 40 X 212 X 194 X 92 X 208 X 34 X 116 X 48 X 12 X 236 X 18 X 41 X 220 X 208 X 75 X 95 X 23 X 11 X 20 X 254 X 127 X 102 X 16 X 16 X 14 X 64 X 63 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 X 101 X 16 X 37 X 60 X 230 X 128 X 58 X 202 X 193 X 73 X 199 X 224 X 34 X 255 
-X 255 X 23 X 87 X 17 X 104 X 223 X 245 X 58 X 207 X 226 X 18 X 203 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 X 151 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 69 X 6 X 248 . 0 . 0 < 0 . 0 . 0 . 0 X 101 X 248 X 247 X 229 X 29 X 128 X 128 X 13 X 16 X 60 X 20 X 88 X 120 X 255 
-X 255 X 122 X 142 X 145 X 88 X 189 X 180 X 131 X 119 X 26 X 192 # 0 # 0 X 229 X 158 X 168 X 242 X 53 X 252 X 80 X 46 X 236 X 54 X 67 X 101 X 174 X 79 X 117 X 233 X 90 X 204 X 98 X 203 X 83 # 0 # 0 X 17 X 160 X 158 . 0 . 0 . 0 . 0 X 188 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 . 0 . 0 < 0 . 0 . 0 . 0 X 174 X 75 X 22 X 77 X 209 X 199 X 164 X 205 X 132 X 217 X 89 X 232 X 249 X 255 
-X 255 X 32 X 68 X 107 X 13 X 131 X 11 X 60 X 48 X 87 # 0 # 0 X 134 X 113 X 49 X 25 X 5 X 106 X 149 X 178 X 172 X 171 X 247 X 127 X 115 X 148 X 69 X 238 X 110 X 157 X 215 X 96 X 181 X 20 X 203 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 250 X 78 X 170 . 0 . 0 . 0 . 0 . 0 . 0 X 1 X 192 X 147 X 245 X 127 X 176 X 142 X 127 X 84 X 151 X 167 X 8 X 156 X 255 
-X 255 X 58 X 72 X 77 X 121 X 53 X 244 X 48 X 139 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 233 X 81 X 224 X 112 X 199 X 45 X 254 X 111 X 52 X 147 X 161 X 123 X 224 X 19 X 175 X 213 X 67 X 60 X 9 X 94 X 14 X 211 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 241 X 133 X 57 X 97 X 176 X 196 X 249 X 36 X 165 X 14 X 203 X 115 . 0 . 0 . 0 . 0 X 5 X 72 X 175 X 248 X 241 X 164 X 255 
-X 255 X 254 X 58 X 148 X 223 X 177 X 103 X 11 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 X 101 X 99 . 0 . 0 . 0 . 0 X 255 
-X 255 X 116 X 96 X 192 . 0 . 0 . 0 . 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 X 7 X 242 X 55 X 107 X 78 X 183 X 169 X 19 X 173 X 30 X 114 . 0 . 0 . 0 . 0 . 0 X 237 X 28 X 169 X 117 X 50 X 233 X 222 X 46 X 196 # 0 X 41 X 46 X 243 # 0 X 10 X 249 X 134 X 64 X 93 X 211 X 238 X 7 X 229 X 148 X 28 X 89 X 250 X 240 X 94 X 112 . 0 . 0 . 0 . 0 X 192 X 180 . 0 . 0 . 0 . 0 X 255 
-X 255 X 57 X 4 X 104 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 X 255 
-X 255 X 144 X 107 X 104 . 0 . 0 . 0 . 0 X 51 X 220 X 224 X 86 X 3 X 166 X 12 # 0 X 167 X 86 X 127 X 10 X 188 X 169 # 0 X 91 X 227 X 178 X 12 X 182 X 210 X 155 X 70 X 210 X 36 X 176 . 0 . 0 . 0 . 0 . 0 X 160 X 52 X 48 X 237 X 46 X 205 X 241 . 0 . 0 < 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 # 0 X 139 X 221 X 51 X 248 X 53 X 121 X 145 X 96 X 169 X 120 X 141 . 0 . 0 . 0 . 0 X 255 
-X 255 X 169 X 210 X 91 X 158 X 213 # 0 X 237 X 189 X 193 X 65 X 83 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 104 X 36 X 79 X 62 X 216 X 53 X 242 X 154 X 109 X 71 X 44 X 139 X 109 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 156 X 80 X 146 X 50 X 25 # 0 X 153 X 52 X 137 X 215 X 13 X 181 X 202 X 158 X 27 X 10 X 201 X 165 X 118 # 0 X 96 X 255 
-X 255 X 133 X 178 X 116 X 63 X 123 # 0 X 38 X 226 X 190 X 169 X 120 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 148 X 48 X 11 X 16 X 138 X 48 X 234 X 74 X 216 X 91 X 80 X 13 X 5 X 111 X 130 # 0 X 185 X 121 X 75 X 9 X 38 X 34 X 253 X 219 X 248 X 174 X 64 X 63 X 151 X 242 # 0 X 44 X 27 X 29 X 52 X 157 X 68 X 23 X 230 X 22 X 113 X 47 X 26 X 109 # 0 X 156 X 255 
-X 255 X 173 X 71 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 3 X 243 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 204 X 108 X 109 X 29 X 151 X 119 X 99 X 167 X 113 X 79 X 230 X 178 X 218 X 18 X 245 # 0 X 95 X 86 X 102 X 66 X 241 X 96 X 4 X 162 X 193 X 243 X 101 X 145 X 122 X 195 # 0 X 63 X 49 X 108 X 84 X 199 X 218 X 174 X 103 X 76 X 252 X 70 X 246 X 208 # 0 X 236 X 255 
-X 255 X 92 X 174 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 211 X 231 X 54 X 93 X 90 # 0 X 92 X 145 X 26 X 199 X 228 X 225 X 162 X 147 X 65 X 229 X 136 X 127 X 212 X 89 X 214 X 194 X 172 X 125 X 253 X 103 X 110 X 44 X 120 X 91 X 250 X 68 X 59 X 41 X 161 X 141 X 19 X 252 # 0 X 44 X 188 X 4 X 6 X 87 X 142 X 71 X 53 X 15 X 189 X 11 X 104 X 148 X 204 # 0 X 18 X 194 X 123 X 120 X 237 X 235 X 202 X 224 X 48 X 6 X 3 X 200 X 138 # 0 X 189 X 255 
-X 255 X 168 X 64 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 57 X 58 X 17 X 160 X 197 # 0 X 172 X 206 X 143 X 33 X 71 X 125 X 13 X 10 X 86 X 52 X 8 X 88 X 252 X 145 X 108 X 186 X 59 X 164 X 54 X 213 X 217 X 253 X 1 X 86 X 251 X 57 X 143 X 5 X 208 X 77 X 208 X 117 # 0 X 96 X 149 X 91 X 212 X 161 X 100 X 44 X 205 X 107 X 131 X 202 X 252 X 231 X 133 # 0 X 132 X 178 X 6 X 86 X 169 X 252 X 171 . 0 . 0 . 0 . 0 X 245 X 127 # 0 X 108 X 255 
-X 255 X 154 X 211 X 2 X 244 X 168 X 155 X 82 X 211 X 105 X 188 X 80 X 52 X 177 X 48 # 0 X 224 X 179 X 100 X 222 X 10 X 6 X 219 X 172 X 170 X 3 X 222 X 77 X 247 X 94 X 200 X 100 X 239 X 156 X 102 X 221 X 61 X 248 X 48 X 18 X 98 X 227 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 224 X 66 X 37 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 50 . 0 . 0 . 0 . 0 # 0 # 0 # 0 X 235 X 255 
-X 255 X 70 X 142 X 51 X 122 X 37 X 85 X 91 X 102 X 113 X 19 X 244 X 141 X 32 X 68 # 0 X 29 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 . 0 . 0 . 0 . 0 X 67 X 76 X 48 X 160 X 255 
-X 255 X 46 X 179 X 236 X 88 X 235 X 45 X 241 X 249 X 62 X 128 X 157 X 156 X 35 X 209 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 105 X 144 X 10 X 86 X 223 X 236 X 123 X 202 X 230 X 176 X 75 > 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 128 X 21 X 64 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 101 X 226 X 120 X 225 X 40 X 221 X 49 X 145 X 75 X 255 
-X 255 X 149 X 39 X 122 X 127 X 142 X 53 X 247 X 154 X 109 X 135 X 211 X 109 X 130 X 92 X 206 X 6 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 24 X 103 X 98 X 145 X 229 X 231 X 190 X 213 X 122 X 44 X 94 X 70 X 144 X 215 X 161 X 95 X 212 X 134 X 220 X 53 X 231 X 141 X 186 X 174 X 33 X 177 X 87 X 202 X 125 X 40 X 253 X 148 X 142 X 96 X 31 X 109 X 64 X 220 X 67 X 185 X 1 X 160 X 247 X 144 X 120 X 153 X 231 X 77 X 255 
+X 255 X 226 X 86 X 94 X 168 X 141 X 203 X 203 X 59 X 14 X 125 X 155 X 228 X 69 X 206 X 44 X 194 X 170 X 154 X 66 X 68 X 34 X 46 X 80 X 97 X 121 X 200 X 76 X 184 X 224 X 181 X 134 X 195 X 5 X 227 X 101 X 137 X 168 X 49 X 187 X 173 X 173 X 79 X 138 X 233 X 31 X 181 X 173 X 200 X 72 X 230 X 5 X 105 X 21 X 84 X 193 X 133 X 29 X 14 X 54 X 244 X 187 X 188 X 176 X 183 X 152 X 22 X 57 X 57 X 62 . 0 . 0 . 0 . 0 X 105 X 205 X 98 X 24 X 115 X 255 
+X 255 X 35 X 95 X 82 X 31 X 192 X 94 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 > 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 . 0 . 0 . 0 . 0 X 151 X 203 X 187 X 94 X 56 X 255 
+X 255 X 234 X 122 X 196 X 70 X 31 X 184 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 > 0 . 0 . 0 . 0 . 0 . 0 X 31 X 6 X 115 X 91 . 0 . 0 . 0 . 0 X 191 X 216 X 246 X 226 X 237 X 255 
+X 255 X 122 X 77 X 156 X 174 X 166 X 130 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 > 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 239 X 232 X 130 X 195 X 40 X 235 X 146 X 160 X 144 X 176 X 146 X 67 X 194 X 255 
+X 255 X 6 X 85 X 221 X 251 X 32 X 86 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 20 X 76 X 170 X 26 X 84 X 169 X 254 X 152 X 54 X 177 X 30 X 190 X 78 X 255 
+X 255 X 254 X 126 X 204 X 23 X 239 X 217 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 65 X 34 X 120 X 137 X 100 X 193 X 209 X 237 X 33 X 35 X 118 X 32 X 251 X 255 
+X 255 X 100 X 177 X 114 X 10 X 137 X 158 X 163 X 64 X 120 X 208 X 12 X 168 X 168 X 169 X 117 X 50 X 145 X 170 X 106 X 170 X 35 X 234 X 16 X 219 X 189 X 244 X 252 X 215 X 99 X 29 X 211 X 198 X 206 X 70 X 200 X 80 X 228 X 108 X 136 X 85 X 53 X 147 X 253 X 221 X 53 # 0 X 8 X 197 X 23 X 114 X 104 X 49 X 93 X 111 X 14 X 19 # 0 # 0 X 233 X 199 X 31 X 181 X 142 X 228 X 251 X 87 X 46 X 216 X 186 X 181 X 46 X 231 X 65 X 36 X 189 X 117 X 143 X 196 X 255 
+X 255 X 51 X 157 X 47 X 154 X 205 X 140 X 11 X 218 X 150 X 102 X 220 X 129 X 46 X 251 X 47 X 180 X 216 X 35 X 4 X 7 X 250 X 182 X 187 X 34 X 158 X 251 X 61 X 92 X 105 X 195 X 25 X 155 X 97 X 72 X 47 X 48 X 203 X 57 X 3 X 98 X 158 X 223 X 218 X 196 X 211 # 0 X 113 X 172 X 45 X 116 X 179 X 33 X 35 X 111 X 58 X 192 X 100 # 0 # 0 X 196 X 59 X 46 X 97 X 147 X 109 X 135 X 186 X 57 X 191 X 189 X 154 X 86 X 149 X 110 X 27 X 105 X 120 X 131 X 255 
+X 255 X 22 X 156 X 247 X 192 X 188 X 27 X 41 X 245 X 211 X 140 X 101 X 231 X 73 X 151 X 14 X 169 X 43 X 122 X 49 X 229 X 170 X 231 X 155 X 70 X 55 X 49 X 171 X 73 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 139 X 93 X 95 # 0 X 254 X 138 X 12 X 40 X 104 X 173 X 9 X 4 X 242 X 63 X 44 X 150 # 0 # 0 X 185 X 84 X 91 X 114 X 17 X 194 X 222 X 223 X 75 X 66 X 138 X 87 X 11 X 14 X 172 X 97 X 150 X 163 X 255 
+X 255 X 234 X 161 X 194 X 75 X 71 X 202 X 70 . 0 > 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 70 X 122 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 31 X 100 X 51 # 0 X 220 X 24 X 192 X 26 X 218 X 118 X 160 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 200 X 2 X 73 X 255 
+X 255 X 215 X 194 X 98 X 178 X 57 X 249 X 130 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 # 0 # 0 # 0 # 0 X 196 X 176 X 232 X 199 X 120 X 91 X 146 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 < 0 . 0 X 58 X 233 X 148 X 255 
+X 255 X 225 X 203 X 92 X 91 X 31 X 229 X 121 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 69 X 155 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 201 . 0 . 0 . 0 . 0 X 41 X 174 X 66 X 137 X 104 X 14 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 150 X 39 X 248 X 255 
+X 255 X 190 X 213 X 60 X 64 X 54 X 73 X 91 X 194 X 34 X 95 X 140 X 150 X 149 X 126 X 58 X 209 X 82 X 97 X 109 X 32 X 232 X 209 X 223 X 54 X 212 X 233 X 60 X 161 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 198 . 0 . 0 . 0 . 0 X 117 X 90 X 236 X 148 X 67 X 183 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 148 X 143 X 118 X 255 
+X 255 X 2 X 232 X 91 X 141 X 36 X 19 X 248 X 139 X 150 X 71 X 56 X 188 X 14 X 62 X 125 X 3 X 117 X 14 X 103 X 10 X 171 X 134 X 198 X 123 X 197 X 41 X 11 X 187 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 < 0 . 0 X 225 . 0 . 0 . 0 . 0 X 251 X 101 X 234 X 7 X 9 X 105 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 61 X 127 X 84 X 255 
+X 255 X 58 X 227 X 55 X 56 X 227 X 160 X 251 X 88 X 206 X 224 X 221 X 185 X 130 X 245 X 196 X 210 X 136 X 85 X 103 X 185 X 116 X 41 X 22 X 185 X 110 X 186 X 224 X 54 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 216 . 0 . 0 . 0 . 0 X 188 X 234 X 224 X 118 X 96 X 10 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 102 X 199 X 77 X 255 
+X 255 X 35 X 178 X 39 X 145 X 11 X 40 X 22 X 20 X 151 X 76 X 244 X 54 X 123 X 55 X 85 X 202 X 163 X 53 X 116 X 33 X 101 X 105 X 13 X 188 X 140 X 55 X 229 X 87 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 174 X 14 X 139 X 250 X 215 X 39 X 48 X 68 X 71 X 140 X 165 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 < 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 175 X 210 X 213 X 255 
+X 255 X 205 X 250 X 19 X 22 X 127 X 183 X 97 X 184 X 216 X 226 X 224 X 81 X 4 X 166 X 100 X 202 X 188 X 50 X 218 X 38 X 232 X 50 X 245 X 19 X 35 X 27 X 225 X 33 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 209 X 211 X 79 X 54 X 158 X 4 X 96 X 113 X 42 X 65 X 163 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 X 81 X 238 X 71 X 255 
+X 255 X 84 X 79 X 184 X 117 X 144 X 84 X 140 X 218 X 10 X 173 X 9 X 223 X 152 X 217 X 165 X 4 X 75 X 100 X 11 X 211 X 202 X 7 X 45 X 186 X 219 X 46 X 116 X 132 X 126 X 100 X 203 X 202 X 170 X 124 X 56 X 51 X 199 X 188 X 15 X 208 X 106 X 15 X 177 X 250 X 231 X 79 X 253 X 51 X 171 X 1 X 253 X 118 X 7 X 43 X 42 X 225 X 81 X 157 X 95 X 206 X 248 X 43 X 145 X 156 X 158 X 201 X 206 X 94 X 126 X 220 X 47 X 231 X 234 X 215 X 226 X 210 X 32 X 216 X 255 
+X 255 X 253 X 202 X 208 X 251 X 65 X 215 X 32 X 106 X 177 X 112 X 1 X 17 X 55 X 248 X 51 X 192 X 149 X 200 X 130 X 93 X 39 X 1 X 58 X 78 X 231 X 30 X 30 X 195 X 231 X 61 X 148 X 229 X 8 X 102 X 218 X 65 X 54 X 241 X 162 X 222 X 90 X 162 X 231 X 144 X 148 X 19 X 73 X 34 X 219 X 202 X 126 X 249 X 202 X 176 X 64 X 171 X 205 X 86 X 111 X 181 X 146 X 250 X 148 X 146 X 97 X 103 X 202 X 142 X 89 X 109 X 110 X 178 X 9 X 86 X 59 X 156 X 104 X 124 X 255 
 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 
 END
 FOG
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X . . . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X . . . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X . . . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X . . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X # # # X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X # # . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X # # # # # X X X X X X X X X X X # # # # # . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X X X # X X X X X X X X X X X X X X X X X X . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X # X X X X X . . . . . . X X X X X X X X X X . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X # X X X X X . . . . . . X X X X X X X X X X . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X . . . . X X X X X . . . . . . X X X X X X X X X X . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X . . . . X X X X X X X X # X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X . . . . X X X X X X X X # X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X X X X X X X X . . . . . . . . . . . # X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X X X X X X X X . . . . . . . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
-X X X X X X X X X X X X X X X X X X X X . . . . . . . . . . . X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
 END
 

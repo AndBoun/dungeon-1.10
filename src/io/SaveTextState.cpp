@@ -182,10 +182,11 @@ void TextState::savePC(Dungeon &d, std::ofstream &file){
         file << dice.base << " " << dice.numDice << " " << dice.numSides << " ";
     }
     file << std::endl;
-    file << "items" << std::endl;
+    file << "items ";
     for (auto item : pc.items){
         file << item->ID << " ";
     }
+    file << std::endl;
     file << "END" << std::endl;
     file << std::endl;
 }
