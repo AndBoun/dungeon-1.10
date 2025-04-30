@@ -1,12 +1,12 @@
 # How To Run The Project:
 
- Create a `.rlg327` folder in your home directory and move the `monster_desc.txt` and `object_desc.txt` file into it:
+ Create a `.rlg327` folder in your home directory and move the `monster_desc.txt` and `object_desc.txt` files into it:
 ```bash
 mkdir ~/.rlg327
 ```
 
 > [!NOTE]
-> You must have these files in your `.rlg327` folder. All files within the `.rlg327` folder are from Iowa State University's professor, Jeremy Scheaffer, except the `state.txt` file thats created by me. The included `.rlg327` provides all you need, including `state.txt` to run the program
+> You must have these files in your `.rlg327` folder. All files within the `.rlg327` folder are from Iowa State University's professor, Jeremy Scheaffer, except the `state.txt` file I created. The included `.rlg327` provides all you need, including `state.txt` to run the program.
 
 
 Build the project:
@@ -16,7 +16,7 @@ make
 
 
 > [!Note]
-> The project includes a `.devcontainer` folder, that provides the intended development environment for the program. It uses a `Dockerfile` with the latest stable Fedora version with gcc/g++, gdb, and ncurses. This emulates Iowa State University's Pyrite server environment.
+> The project includes a `.devcontainer` folder that provides the intended development environment for the program. It uses a `Dockerfile` with the latest stable Fedora version with gcc/g++, gdb, and ncurses. This emulates Iowa State University's Pyrite server environment.
 
 ## Running configurations
 
@@ -46,13 +46,13 @@ The project introduces saving and loading with text files. This allows you to sa
 - All files and inputs are assumed to be valid
 
 ## Additional Notes
-- Loading and Saving depend you maintaining the same `object_desc.txt` and  `monster_desc.txt` files in the `rlg327` folder.
+- Loading and Saving depend on you maintaining the same `object_desc.txt` and  `monster_desc.txt` files in the `rlg327` folder.
 - The loading and saving should maintain everything, but the priority queue state.
 - Press `[` to save the current state in your turn.
-- Press `]` to revert back to your saved state. This assumes you have a valid state saved in `state.txt`.
+- Press `]` to revert to your saved state. This assumes you have a valid state saved in `state.txt`.
 
 ## How the Project Runs:
-In `main.cpp`, it creates a dungeon instance, `start_gameplay()` in `Dungeon.cpp`.  This will then ask for user input in `ui.cpp`, this is where you can save and load a state in `LoadTextState.cpp` and `SaveTextState.cpp`. When you press `]` to load a state, it returns `-4` all the way back into `start_gampeplay()` and `main.cpp`, where is will reset the dungeon and load the `state.txt` with `LoadTextState.cpp`
+In `main.cpp`, it creates a dungeon instance, `start_gameplay()` in `Dungeon.cpp`.  This will then ask for user input in `ui.cpp`, where you can save and load a state in `LoadTextState.cpp` and `SaveTextState.cpp`. When you press `]` to load a state, it returns `-4` back into `start_gampeplay()` and `main.cpp`, where it will reset the dungeon and load the `state.txt` with `LoadTextState.cpp`
 
 
 # `State.txt` Configurations
@@ -110,7 +110,7 @@ END
 ```
 
 ### PC
-Where  equipment slots take an `int` that indexes the Item from the Dungeon. 'damDices' dices has sets of three ints, representing all three dice attributes. `items` take a list of `ints` that indexes items from the Dungeon
+Where  equipment slots take an `int` that indexes the Item from the Dungeon. `damDices` dices has sets of three ints, representing all three dice attributes. `items` take a list of `ints` that indexes items from the Dungeon
 ```
 PC
 hp 100
@@ -146,7 +146,7 @@ END
 
 
 ### Grid
-Format is : `<char> <hardness>`, where `X` represent a space character
+Format is: `<char> <hardness>`, where `X` represents a space character
 ```
 GRID
 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 255 X 
