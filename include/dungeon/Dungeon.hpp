@@ -131,7 +131,7 @@ public:
     bool placeNPCsRandomly(int numNPCs = DEFAULT_NUM_MONSTERS);
     bool placeItemsRandomly(int numItems = 10);
 
-    int startGameplay(int numNPCs = DEFAULT_NUM_MONSTERS);
+    int startGameplay(int numNPCs = DEFAULT_NUM_MONSTERS, bool loadState = false);
     int movePC(int x, int y, bool teleport = false);
     bool moveNPC(NPC *npc);
     bool killNPC(Point p) { return killNPC(p.getX(), p.getY()); }
@@ -139,7 +139,7 @@ public:
     bool killPC();
     bool attackCharacter(Character *c, int damage, Character *attacker);
     
-    void resetDungeon();
+    void resetDungeon(bool fullReset = false);
 
     void printDungeon() const;
     void printDistanceMap(const std::array<std::array<int, DUNGEON_WIDTH>, DUNGEON_HEIGHT> &distanceMap) const;

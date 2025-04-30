@@ -28,7 +28,7 @@ Dungeon::~Dungeon() {
     }
 }
 
-void Dungeon::resetDungeon()
+void Dungeon::resetDungeon(bool fullReset)
 {
     // Free npcs
     for (size_t i = 0; i < npcs.size(); i++){
@@ -42,7 +42,10 @@ void Dungeon::resetDungeon()
             delete items[i];  
             items[i] = nullptr;
             items.erase(items.begin() + i);
-        } 
+        } else if (fullReset && items[i] != nullptr){
+            delete items[i];  
+            items[i] = nullptr;
+        }
     }
 
     // Reset item IDs
@@ -56,8 +59,10 @@ void Dungeon::resetDungeon()
     up_stairs.clear();
     down_stairs.clear();
     npcs.clear();
-    // items.clear();
-    // pc.items.clear(); // Clear the player's items
+    if (fullReset) {
+        items.clear();
+        pc.items.clear(); // Clear the player's items
+    }
     generateRandomDungeon(); // Regenerate the dungeon
 }
 
@@ -74,14 +79,16 @@ void Dungeon::generateRandomDungeon()
     } while (true);
 }
 
-int Dungeon::startGameplay(int numNPCS){
+int Dungeon::startGameplay(int numNPCS, bool loadState){
     
-    placeNPCsRandomly(numNPCS); // Place NPCs randomly
-    placeItemsRandomly(numItems); // Place items randomly
+    if (!loadState) {
+        placeNPCsRandomly(numNPCS); // Place NPCs randomly
+        placeItemsRandomly(numItems); // Place items randomly
+        numMonsterAlive = numNPCS; // Set the number of monsters alive
+    }
     ui::init_NPC_colors(npcs); // Initialize NPC colors
     ui::init_item_colors(items); // Initialize item colors
 
-    numMonsterAlive = numNPCS; // Set the number of monsters alive
     int num_entities = getNPCs().size() + 1;
 
     // Create a priority queue for the entities
@@ -129,9 +136,14 @@ int Dungeon::startGameplay(int numNPCS){
             } else {
                 ui::render_grid((*this), getGrid());
             }
-            if (ui::get_input(*this) == -2){
+            int status = ui::get_input(*this);
+            if (status == -2){
                 pq_destroy(pq);
                 return -2;
+            }
+            if (status == -3){
+                pq_destroy(pq);
+                return -3;
             }
 
             next_time = current_time + calculateTiming(pc.getSpeed());

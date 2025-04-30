@@ -9,6 +9,7 @@
 #include <string.h>
 #include <cstdlib>
 #include <ui/ui.hpp>
+#include <io/TextState.hpp> 
 
 // #define COLOR_DEFAULT_ID 1
 // #define COLOR_PLAYER_ID 2
@@ -229,6 +230,16 @@ int ui::get_input(Dungeon &d) {
                 result = 0; // no movement, run loop again
                 wear_item(d);
                 break;
+
+            case '[': // Save State
+                result = 0; // no movement, run loop again
+                render_top_bar(COLOR_SUCCESS_ID, "State Saved");
+                TextState::saveState(d);
+                break;
+            
+            case ']': // Load State
+                result = 0; // no movement, run loop again
+                return -3;
                 
             default:
                 render_top_bar(COLOR_ERROR_ID, "Invalid Input");

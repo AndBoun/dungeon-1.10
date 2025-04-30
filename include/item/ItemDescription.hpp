@@ -40,7 +40,7 @@ static const std::set<std::string> validTypes = {
 class ItemDescription
 {
 public:
-std::string name;
+    std::string name;
     std::string desc;
     std::string type;
     std::string color;

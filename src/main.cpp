@@ -13,6 +13,7 @@
 #include <ui/ui.hpp>
 #include <item/ItemDescription.hpp>
 #include <character/NPCDescription.hpp>
+#include <io/TextState.hpp>
 
 int main(int argc, char *argv[])
 {
@@ -53,12 +54,22 @@ int main(int argc, char *argv[])
     }
 
     ui::init_ncurses();
-
-    while (d.startGameplay(num_monsters) == - 2){
+    
+    int status = d.startGameplay(num_monsters);
+    while (status != 1){
         // ui::destroy_ncurses();
         // ui::init_ncurses();
-        d.resetDungeon();
+        if (status == -2){
+            d.resetDungeon();
+            status = d.startGameplay(num_monsters);
+        }
+        if (status == -3){
+            d.resetDungeon(true);
+            TextState::loadState(d);
+            status = d.startGameplay(d.numMonsterAlive, true);
+        }
     }
+
 
     ui::destroy_ncurses();
 
