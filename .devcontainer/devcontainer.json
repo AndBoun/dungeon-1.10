@@ -18,5 +18,5 @@
     "mounts": [
         "source=${localWorkspaceFolder}/.rlg327,target=/root/.rlg327,type=bind"
     ],
-    "postCreateCommand": "echo 'Container setup complete!'"
+    "postCreateCommand": "[[ \"$CODESPACES\" == \"true\" ]] && cp -r .rlg327 /root/.rlg327 || echo 'No copy needed (local dev)'"
 }
